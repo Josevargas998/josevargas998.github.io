@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora la Cultura Mokana con IWEKA</title>
+  <link rel="stylesheet" href="mokana_proyecto.css">
+
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Estilo para el formulario */
+    .formulario {
+      background-color: #e6f5ff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 20px; /* Añadido para separación visual */
+    }
+
+    .formulario h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .formulario label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario input[type="password"],
+    .formulario input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box; /* Añadido para incluir el padding en el ancho total */
+    }
+
+    .formulario input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .formulario input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Estilos para el encabezado */
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Estilos para la barra de navegación */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Estilos para la sección principal */
+    .main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main img,
+    .main video {
+      margin-right: 20px;
+    }
+
+    /* Estilos para la barra lateral */
+    .sidebar {
+      background-color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Estilos para el pie de página */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Estilos para la sección de wireframe */
+    .wireframe {
+      text-align: center;
+    }
+
+    .wireframe img {
+      margin: 10px auto;
+      display: block;
+      width: 250px;
+    }
+
+    /* Estilos para centrar el texto en sidebar2 */
+    .sidebar2 h2,
+    .sidebar2 p,
+    .sidebar2 a {
+      text-align: center;
+    }
+
+    /* Animación para el texto del encabezado */
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .header h1 {
+      animation: slideInDown 1s ease;
+    }
+
+    /* Animación para la lista de navegación */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .navbar ul {
+      animation: fadeIn 1s ease;
+    }
+
+    /* Animación para el texto del artículo principal */
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    .main h2,
+    .main p {
+      animation: slideInLeft 1s ease;
+    }
+
+    /* Animación para la barra lateral */
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    .sidebar {
+      animation: slideInRight 1s ease;
+    }
+
+    /* Animación para el pie de página */
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .footer {
+      animation: slideInUp 1s ease;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>¡Descubre la fascinante cultura Mokana con IWEKA!</h1>
+    <p><strong>IWEKA es una página web que busca desarrollar en los estudiantes de tercer grado de primaria su comprensión lectora mediante el reconocimiento y la tradición oral de la cultura Mokana.</strong></p>
+  </header>
+  <nav class="navbar">
+    <strong>Navega por los Temas de la Página Web IWEKA</strong>
+    <ul>
+      <li><a href="https://www.radionacional.co/cultura/tradiciones/pueblo-indigena-del-atlantico-mokana"><strong style="color:purple;">Escritura</strong></a></li>
+      <li><a href="https://www.redalyc.org/journal/280/28060161006/html/"><strong style="color:purple;">Comprensión Lectora</strong></a></li>
+      <li><a href="https://rcientificas.uninorte.edu.co/index.php/memorias/article/view/2025"><strong style="color:purple;">Expresión Oral</strong></a></li>
+      <li><a href="https://es.wikipedia.org/wiki/Mokan%C3%A1#:~:text=Su%20lengua%20originaria%20formaba%20parte,no%20se%20ha%20probado%20rigurosamente.&text=Se%20sabe%20que%20la%20palabra,utilizaban%20como%20las%20dem%C3%A1s%20tribus."><strong style="color:purple;">Vocabulario</strong></a></li>
+      <li><a href="https://pueblosindigenas.es/de-colombia/mokana/"><strong style="color:purple;">Cuentos</strong></a></li>
+      <li><a href="https://www.onic.org.co/pueblos/1124-mokana"><strong style="color:purple;">Cultura</strong></a></li>
+    </ul>
+    <a href="https://www.onic.org.co/noticias"><strong style="color:purple;">Noticias</strong></a> 
+  </nav> 
+  <aside class="sidebar">
+    <strong>¡Sumérgete en el Podcast de IWEKA!</strong>
+    <audio src="podcast mokana.mp3" controls></audio> 
+    <p>Disfruta de nuestro podcast donde exploramos la fascinante cultura Mokana a través de relatos, música y mucho más.</p>
+  </aside>
+  
+  <aside class="sidebar2">
+    <h2 style="text-align: center;">¡Explora el Wireframe de IWEKA!</h2>
+    <p style="text-align: center;">¡Accede al recurso diseñado haciendo clic en el siguiente enlace!</p>
+    <a href="https://iwekamokana.wixsite.com/iweka" style="display: block; text-align: center;"><strong>IWEKA - Sitio web oficial</strong></a>
+    <div class="wireframe">
+      <img src="imagen mokana 2.png" alt="Imagen moakana 2" width="300" height="300">
+    </div>
+  </aside>
+
+  <article class="main">
+    <h2>¡Bienvenido a la Experiencia Principal de IWEKA!</h2>
+    <p>Fortalecer la competencia comunicativa en estudiantes de tercer grado a través de una aproximación educativa integral que fusiona la riqueza de la tradición oral y ancestralidad del pueblo Mokana con estrategias de gamificación y el uso de las TIC.</p>
+    <table style="margin: 0 auto;">
+      <tr>
+        <td><img src="imagen mokana 1.png" width="200" height="200" alt="Imagen de la cultura Mokana" /></td>
+        <td>Fortalecer la competencia comunicativa en estudiantes de tercer grado a través de una aproximación educativa integral que fusiona la riqueza de la tradición oral y ancestralidad del pueblo Mokana con estrategias de gamificación y el uso de las TIC.</td>
+      </tr>
+      <tr>
+        <td><video src="video mokana.mp4" controls width="200" height="200">Tu navegador no admite la reproducción de videos.</video></td>
+        <td>Los diversos recursos digitales que se proponen incluir en la creación de IWEKA, se relacionan a continuación: videos, Genially, YouTube, Educaplay, Kahoot, Wordwall</td>
+      </tr>
+    </table>  
+
+    <!-- Formulario para datos básicos de estudiantes -->
+    <div class="formulario">
+      <h2>¡Ingresa tus datos!</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="6" max="12" required><br>
+        <label for="grado">Grado:</label><br>
+        <input type="number" id="grado" name="grado" min="1" max="6" required><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </article>
+  
+  <footer class="footer">
+    <strong>CONTACTO</strong>
+    <br>
+    <a href="#">Institucional</a> | <a href="#">Quienes Somos</a> | <a href="#">Misión y Visión</a> | <a href="#">Objetivos y funciones</a> | <a href="#">Normatividad</a> | <a href="#">Políticas y Planes</a> | <a href="#">Informes de Gestión</a> | <a href="#">Manual de producción y estilo</a> | <a href="#">Servicios</a> | <a href="#">Atención al usuario</a> | <a href="#">Trabaja con nosotros</a> | <a href="#">Calendario de actividades</a> | <a href="#">Buzón Peticiones, Quejas, Reclamos y Denuncias</a> | <a href="#">Tramites y Servicios</a> | <a href="#">Directorio Subgerencia de Radio</a> | <a href="#">Estado de su solicitud</a> | <a href="#">Términos y Condiciones</a> | <a href="#">Entrega de Obsequios</a>
+    <br>
+    <br>
+    <p>Dirección: Calle 17 ·23-119 Armenia, Quindío<br>
+    Teléfono: 3005427206<br>
+    Correo electrónico: <a href="mailto:jhvargas@uniquindio.edu.co">jhvargas@uniquindio.edu.co</a><br>
+    </p>
+    <p>Este sitio web fue desarrollado por Jose Heriberto Vargas Espinosa, Katherine Yamel De Aguas De La Hoz y Evelyn Del Carmen Parra Cogollo, estudiantes de la Maestría en Docencia Mediada por las TIC de la Universidad San Buenaventura sede Bogotá bajo la dirección del profesor Alirio Osorio Gutierrez.</p>
+  </footer>
+
+</body>
+</html>

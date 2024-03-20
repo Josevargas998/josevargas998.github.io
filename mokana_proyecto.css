@@ -1,0 +1,77 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.3rem;
+  min-height: 100%;
+}
+
+.columna1{border: 5px solid black; }
+td{border: 2px solid blue; }
+
+.rojo{color: red;}
+
+.grid-container > * {
+  box-shadow: 10px 0px 20px 0px rgba(40, 20, 0, 0.75);
+  border-radius: 2px;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: mediumvioletred;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: red;/*#afd6af;*/
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fdcfcf;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+  background-color: brown;#fdcfcf;
+}
+
+.main {
+  grid-area: main;
+  background-color: green;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #8c96a0;
+}
+
+.grid-container 
+{
+  display: grid;
+  gap: 2px;
+}
+
+@media (min-width: 900px) 
+{
+  .grid-container 
+  {
+    grid-template:
+      "header  header header header"  100px
+      "navbar  main   sidebar sidebar2" auto
+      "footer  footer footer footer"  100px /
+      200px    auto   200px 200px;
+  }
+}
